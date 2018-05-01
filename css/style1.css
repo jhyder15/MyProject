@@ -1,0 +1,101 @@
+body
+{
+  padding:0;
+  margin:50px;
+  background-image:url('images/download2.jpg');
+  background-size:cover;
+}
+.container
+{
+  width:50%;
+  height:400px;
+  background-color:white;
+  margin:0 auto;
+  border:2px solid white;
+  box-shadow:0 15px 40px rgba(0,0,0,.5);
+}
+.container .left
+{
+  float:left;
+  width:50%;
+  height:400px;
+  background:url('images/download1.jpg');
+  background-size:contain;
+  box-sizing:border-box;
+}
+.container .right
+{
+  float:right;
+  width:50%;
+  height:400px;
+  box-sizing:border-box;
+}
+.formBox
+{
+  width:100%;
+  padding:80px 40px;
+  box-sizing:border-box;
+  height:400px;
+  background-color:white;
+}
+.formBox p
+{
+  margin:0;
+  padding:0;
+  font-weight:bold;
+  color:#f4a460;
+}
+.formBox input 
+{
+  margin-bottom: 20px;
+  width:100%;     
+}
+.formBox input[type="text"],
+.formBox input[type="password"]
+{
+  border:none;
+  border-bottom:2px solid #f4a460;
+  outline:none;
+  height:40px;
+}
+.formBox input[type="text"]:focus,
+.formBox input[type="password"]:focus
+{
+  border-bottom:2px solid #262626;
+}
+.formBox input[type="submit"]
+{
+  border:none;
+  outline:none;
+  color:white;
+  background-color:#262626;
+  cursor:pointer;
+  height:40px
+}
+.formBox input[type="submit"]:hover
+{
+  background:#a6af13;
+}
+.formBox a
+{
+  color:#f4a460;
+  font-size:12px;
+  font-weight:bold;
+}
+@media only screen and (max-width: 600px)
+{
+  .container
+  {
+    width:500px;
+    height:400px;
+    margin-right:20px auto; 
+  }
+  .left
+  {
+    width:250px;
+  }
+  .right
+  {
+    width: 500px;
+  }
+}

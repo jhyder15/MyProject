@@ -1,0 +1,48 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+  <meta  name="viewport" content="width=device-width,initial-scale=1,user-scale=no">
+    
+    <script type="text/javascript">
+      function validate(){
+      var data = new Array();
+      data[0] = document.getElementById('username').value;
+      data[1] = document.getElementById('password').value;
+
+      if(data[0]==""||data[1]=="")
+      {
+        alert('please fill the details');
+        return false;
+      }
+      else
+      {
+        return true;
+      }
+    }
+
+
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server" action="new.html" onsubmit="return validate();">
+        <div>
+            <h2 style="text-align:center;text-transform:uppercase; color:white"> Sing in Form</h2>
+    <div class="container">
+        <div class="left"> </div>
+            <div class="right">
+                <div class="formBox">
+                    <p>Username</p>
+                    <input type="text" name="" placeholder="Ex:abc@jkl.com" id="username" />
+                    <p>Password</p>
+                    <input type="password" name="" placeholder="****" id="password" />
+                    <input type="submit" name="" value="Sign-In" onclick="validate()" />
+                    <a href="#">Forget Password</a>
+                </div>
+            </div>
+    </div>
+        </div>
+    </form>
+    
+</body>
+</html>
